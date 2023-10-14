@@ -37,11 +37,48 @@ BACKGROUND_700: "#3E3B47",
 },
 };
 
-ARROW FUNCTION
+Adicionou em details as tags Main e Content:
+Para que fosse viável a implantação do hover
 
+> main {
 
+    grid-area: content;
+    overflow-y: scroll;
+    padding: 64px 0;
 
+}
 
+export const Content = styled.div`
+max-width: 550px;
+margin-inline: auto;
+
+display: flex;
+flex-direction: column;
+
+> button:first-child {
+
+    align-self: end;
+
+}
+
+> h1 {
+
+    font-size: 36px;
+    font-weight: 500;
+    padding-top: 64px;
+
+}
+
+> p {
+
+    font-size: 1rem;
+    margin-top: 1rem;
+    text-align: justify;
+
+}
+`;
+
+Overflow-y garente o srrol somente no componente
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
